@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es" manifest="damas.manifest">
+	<head>
+		<meta charset="UTF-8">
+		<title>Damas IM</title>
+		<link rel="stylesheet" href="style/style.css">
+		<script src="js/index.js"></script>
+	</head>
+	<body>
+		<h1>Damas IM</h1>
+		<p id="movimientos">Movimientos: <span id="count">0</span></p>
+		<p id="esTurno">Empiezan Blancas: </p>
+		<canvas id="lienzo" width="600" height="300"></canvas>
+		<br><br>
+		<input type="button" id="resetButton" value="Nueva partida">
+		<input type="button" id="loadButton" value="Cargar partida">
+		<input type="button" id="saveButton" value="Guardar partida">
+		<br>
+		<hr>
+		<br>
+		<label for="empateButton">Pulsar para finalizar el juego: </label>
+		<input type="button" id="empateButton" value="Empate!">
+		<p>Necesitas la confirmaci&oacute;n del oponente. </p>
+		<div id="moveBlancas"><h3>Blancas</h3></div>
+		<div id="moveNegras"><h3>Negras</h3></div>
+		<script>
+            iniciarJuego(document.getElementById('lienzo'), document.getElementById('count'));
+		</script>		
+	</body>
+</html>
+

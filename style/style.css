@@ -1,0 +1,24 @@
+h3 {
+	text-decoration:underline;
+}
+
+hr {
+	position:absolute;
+	left:0px;
+	width:440px;
+}
+
+#moveBlancas {
+	position:absolute;
+	left:500px;
+	top: 120px;
+	width:200px;
+}
+
+#moveNegras {
+	position:absolute;
+	left:700px;
+	top: 120px;
+	width:200px;
+}
+
